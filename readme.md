@@ -128,3 +128,6 @@ WD-ProjectName
 | ----------------------------------------- | -------------------------- | -------------------------------------------- |
 | HTML & CSS Full Course for free 🌎 (2023) | Functions and explanations | https://www.youtube.com/watch?v=HGTJBPNC-Gw  |
 | WD-Hands-on-2                             | Ideas & reference          | https://github.com/zyx-0314/Github-Git-Guide |
+
+Deployment Link:
+https://iconiq2.github.io/WD-Hands-on-2/
