@@ -1,112 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
-
-* {
-    padding: 0;
+@font-face{
+    src: url(./fonts/Poppins-Black.ttf);
+    font-family: Poppins-Black;
+}
+@font-face{
+    src: url(./fonts/Roboto-Black.ttf);
+    font-family: Roboto-Black;
+}
+*{
     margin: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', 'Roboto',sans-serif;
+}
+body{
+    background-color: firebrick;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 16px;
 }
 
-body {
-    height: 300dvh;
-    overflow-x: hidden;
+h3{
+    font-size: 3rem;
+    color: black#;
+    margin-top: 8px;
 }
-
-.hero {
-    height: 100dvh;
-    width: 100dvw;
-    position: relative;
-
-    .background {
-        .toxic {
-            width: 100%;
-            position: absolute;
-            z-index: -2;
-            height: 100dvh;
-        }
-            
-        .partial-color {
-            background-image: linear-gradient(to right top, #340057b2, #93ee00d2);
-            height: 100dvh;
-            width: 70dvw;
-            position: absolute;
-            z-index: -1;
-            right: 0;
-        }
-    }
-
-    .content {
-        display: flex;
-        align-items: center;
-        gap: 5rem;
-
-        .left {
-            height: 100dvh;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            width: 50dvw;
-
-            img {
-                width: 40rem;
-                aspect-ratio: 1/1;
-                object-fit: cover;
-                box-shadow: 40px 45px 12px 2px rgba(6, 68, 0, 0.62);
-                -webkit-box-shadow: 40px 45px 12px 2px rgba(6, 68, 0, 0.62);
-                -moz-box-shadow: 40px 45px 12px 2px rgba(6, 68, 0, 0.62);
-            }
-        }
-
-        .right {
-            width: 50dvw;
-
-            .container {
-                width: 40rem;
-                aspect-ratio: 1/1;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
-                .designer {
-                    font-weight: 100;
-                    font-size: 2rem;
-                    letter-spacing: .5rem;
-                }
-
-                .name {
-                    font-family: "Gwendolyn", cursive;
-                    font-size: 4rem;
-
-                    span {
-                        font-size: 5rem;
-                    }
-                }
-
-                .message {
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                }
-
-                .content {
-                    font-size: 1.5rem;
-                    padding-bottom: 1.5rem;
-                    border-bottom: 2px solid black;
-                    width: fit-content;
-                    text-align: justify;
-                    text-justify: inter-word;
-                }
-
-                img {
-                    height: 7rem;
-                    width: fit-content;
-                }
-
-                .account {
-                    text-decoration: none;
-                    color: black;
-                    font-size: 1.5rem;
-                }
-            }
-        }
-
-    }
+p{
+    font-size: 1.3rem;
+    color: black#;
+    margin-top: 8px;
 }
