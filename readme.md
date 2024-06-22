@@ -13,7 +13,7 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Demo concept for cards and heroes with animation and theme changes. (Optional)
+The demo concept includes animation and theme changes for cards and heroes. Animation of the gallery with pop-up description text.
 </div>
 
 <br />
