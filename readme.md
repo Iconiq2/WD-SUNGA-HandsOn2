@@ -63,10 +63,10 @@ Description of the project in details.
 
 Guiding Question:
 
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- What is the project - About creating heroes and animation.
+- Whats the purpose - To practice my skill in creating animation and heroes.
+- What are key components - Correct input of syntax
+- What technology used and how it is used - HTML, CSS, and JS
 
 ### Key Components
 
