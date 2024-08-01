@@ -1,50 +1,181 @@
-@font-face{
-    src: url(./fonts/Poppins-Black.ttf);
-    font-family: Poppins-Black;
-}
-@font-face{
-    src: url(./fonts/Roboto-Black.ttf);
-    font-family: Roboto-Black;
-}
-*{
+
+* {
     margin: 0;
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'Roboto',sans-serif;
-}
-body{
-    background-color: goldenrod;
-}
-.card-container{
+  }
+  
+  
+  :root {
+    --color-primary: #1a1a1a;
+    --color-secondary: #f2f2f2;
+    --color-accent: #ff4d4d;
+  }
+  
+  
+  .header {
+    background-color: var(--color-primary);
+    padding: 1rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
-}
-.card{
-    width: 800px;
-    background-color: white;
-    border-radius: 8px;
+    align-items: center;
+  }
+  
+  .header .btn {
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    text-decoration: none;
+    color: var(--color-secondary);
+    transition: background-color 0.3s ease;
+    background: var(--color-accent);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 0.5rem;
+  }
+  
+  .header .btn.active {
+    background-color: #e60000;
+  }
+  
+  
+  .hero-card {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../../assets/img/viperWallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-secondary);
+    padding: 2rem;
+  }
+  
+  .hero-card .viper-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    margin: 20px;
-}
-.card img {
-    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-card .viper-image img {
+    max-width: 100%;
     height: auto;
-}
-.card-content{
-    padding: 16px;
-}
-
-h3{
+    transition: transform 0.5s ease;
+  }
+  
+  .hero-card .viper-image:hover img {
+    transform: scale(1.1);
+  }
+  
+  .hero-card .viper-image .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 26, 26, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hero-card .viper-image:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .hero-card .viper-image .image-overlay h1 {
     font-size: 3rem;
-    color: black#;
-    margin-top: 8px;
-}
-p{
-    font-size: 1.3rem;
-    color: black#;
-    margin-top: 8px;
-}
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-card .viper-image .image-overlay p {
+    font-size: 1.5rem;
+  }
+  
+  .hero-card .viper-info {
+    flex: 1;
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+    margin-left: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-card .viper-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-card .viper-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-card .viper-info .abilities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .hero-card .viper-info .abilities .ability {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hero-card .viper-info .abilities .ability:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero-card .viper-info .abilities .ability i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+  }
+  
+  .hero-card .viper-info .abilities .ability h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-card .viper-info .abilities .ability p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .header .btn {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
+    }
+  
+    .hero-card {
+      flex-direction: column;
+    }
+  
+    .hero-card .viper-image {
+      margin-bottom: 2rem;
+    }
+  
+    .hero-card .viper-info {
+      margin-left: 0;
+    }
+  
+    .hero-card .viper-info .abilities {
+      grid-template-columns: 1fr;
+    }
+  }
