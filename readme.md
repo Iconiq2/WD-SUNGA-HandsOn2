@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/Iconiq2">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/Logo.png" alt="Logo" width="130" height="100">
+    <img src="./assets/img/CharlesLogo2.jpg" alt="Logo" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Hero & Card</h3>
@@ -73,9 +73,9 @@ Guiding Question:
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Design and Theme
+- Implementation of Heroes and Cards
+- Navigation
 
 ### Technology
 
@@ -128,6 +128,3 @@ WD-ProjectName
 | ----------------------------------------- | -------------------------- | -------------------------------------------- |
 | HTML & CSS Full Course for free 🌎 (2023) | Functions and explanations | https://www.youtube.com/watch?v=HGTJBPNC-Gw  |
 | WD-Hands-on-2                             | Ideas & reference          | https://github.com/zyx-0314/Github-Git-Guide |
-
-Deployment Link:
-https://iconiq2.github.io/WD-Hands-on-2/
