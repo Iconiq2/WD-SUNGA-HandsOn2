@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+  }
+  
+  .design-twoa {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5vw;
+    align-items: center;
+    background: rgb(0, 0, 0);
+  
+    & > .navigation {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: 16px 48px;
+      height: 70px;
+  
+    & > .navigation-content {
+        color: aliceblue;
+        font-weight: 400;
+        font-size: 1.2rem;
+        transition: transform 0.4s ease-in-out, transform 0.3s ease-in-out;
+        text-decoration: none;
+        margin-left: 3vw;
+    }
+    & > a.navigation-content:hover {
+      transform: scale(1.1);
+  }
+    }
+
+}
+
+.main {
+  font-family: 'Roboto Slab', serif;
+  background-color: #ffffff;
+  font-size: 16px;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+.section-1 {
+  background-image: url(https://www.10wallpaper.com/wallpaper/1680x1050/1908/2019_iOS_13_Dark_Mode_Black_Gradient_Abstract_1680x1050.jpg);
+  height: 450px;
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section-1-inner-col {
+  position: relative;
+}
+
+.image-frame {
+  width: 380px;
+  height: 380px;
+  background-image: url(../../../../assets/img/CharlesFormalPicture.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-2 {
+  margin: 60px 0 0 0;
+  padding: 100px 0px 50px 0px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.primary-heading {
+  font-size: 70px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: rgb(0, 0, 0)
+}
+
+.paragraph {
+  width: 45%;
+  font-size: 20px;
+  font-weight: 400;
+  color:#000000;
+  text-align: justify;
+}
+
+.content{
+  position: absolute;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+/* Experience Section
+.section-3 {
+  font-family: 'Roboto Slab', serif;
+  padding: 50px 0px 50px 0px;
+  position: relative;
+  margin-top: 140px;
+}
+
+.section-3-inner-col-left,
+.section-3-inner-col-right {
+  z-index: 1;
+}
+
+.section-3-heading {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 68px;
+  font-weight: 300;
+  color:#000000
+
+}
+
+.sec3-images {
+  box-shadow: 4px 8px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.section-3-image-left {
+  margin-top: 120px;
+}
+.section-3-image-right {
+  margin-top: 50px;
+}
+
+.sec3-img-left{
+  width: 500px;
+}
+
+.sec3-img-right {
+  width: 400px;
+}
+
+.section-3-button-right {
+  margin-top: 40px;
+}
+
+.sec3-btn-right {
+  font-family: Roboto, sans-serif;
+  padding: 10px 30px;
+  border: 1px solid #ffffff;
+  color: #000000;
+  letter-spacing: 2px;
+  box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.sec3-btn-right:hover {
+  color: #000000;
+  background-color: #ffffff;
+  transform: translateY(-5px);
+}
+
+.sec3-btn-right:active {
+  transform: translateY(0px);
+}
+
+.background-section-3 {
+  height: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  left: 0;
+}
+  */
+
+.footer .disclamer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  font-size: 13px;
+  color: gray;
+  border-top: 1px solid gray;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.section {
+  padding-bottom: 30px;
+  padding-top: 0;
+  position: relative;
+}
+
+.section-heading {
+  padding: 20px 30px;
+  padding-left: 20vw;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.card {
+  margin-bottom: 60px;
+}
+
+.card .role {
+  font-size: 1.25rem;
+  position: absolute;
+  right: 38px;
+  top: 35px;
+}
+
+.card li a {
+  margin-right: 0;
+  color: #333;
+  border-bottom: 2px solid #ffab40;
+}
+
+.card li a:hover {
+  color: #333;
+  font-weight: 500;
+}
+
+.card .card-content {
+  padding-bottom: 30px;
+}
+
+.card .card-content p {
+  padding: 5px 0 0;
+}
+
